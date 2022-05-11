@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 22px;
+            width: 164px;
+        }
+        .auto-style4 {
+            height: 22px;
+            width: 159px;
+        }
+        .auto-style5 {
+            height: 22px;
+            width: 102px;
+        }
+        .auto-style6 {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="web" style="background-image: url('/WebHoTroMuaBanThietBiMayTinh/hinhanh/cuaHang.jpg'); font-size: x-large; text-align: center; color: #FFFFFF; height: 87px;">
+            <br />
+            LINH KIỆN CHÍNH HÃNG
+        </div>
+        <div id="header">
+            <ul>
+                <li> <a href="trangChu.aspx">Trang chủ </a></li>
+                <li> <a href="DangKy.aspx">Đăng ký</a></li>
+                <li> <a href="#">Sản phẩm</a>
+                    <ul class="linhkien">
+                        <li> <a href="laptop.aspx">Laptop</a></li>
+                        <li> <a href="vga.aspx">VGA</a></li>
+                        <li> <a href="main.aspx">Mainboard</a></li>
+                        <li> <a href="manhinh.aspx">Màn hình</a></li>
+                        <li> <a href="ssd.aspx">SSD</a></li>
+                        <li> <a href="hdd.aspx">HDD</a></li>
+                        <li> <a href="ram.aspx">Ram</a></li>
+                        <li> <a href="cpu.aspx">CPU</a></li>
+                    </ul>
+                </li>
+                <li> <a href="gioHang.aspx">Giỏ hàng</a></li>
+            </ul>
+        </div>
+        <div id="man" class="main">
+            <div id="left">
+
+                <table style="width:100%;">
+                    <tr>
+                        <td style="border: thin double #00CCFF; text-align: center; background-color: #00CCFF;">
+                            <asp:Label ID="Label1" runat="server" Text="Bạn chưa đăng nhập"></asp:Label>
+                            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#CC0000" NavigateUrl="~/DangNhap.aspx" Visible="False">Đăng nhập</asp:HyperLink>
+                            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Đăng xuất" Visible="False" BackColor="#66CCFF" ForeColor="White" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin double #00CCFF; background-image: url('/WebHoTroMuaBanThietBiMayTinh/WebHoTroMuaBanThietBiMayTinh/WebHoTroMuaBanThietBiMayTinh/WebHoTroMuaBanThietBiMayTinh/hinhanh/cuaHang.jpg');">
+                            <img alt="" src="hinhLinhKien/c3.PNG" style="width: 283px; height: 316px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="Button1" runat="server" BackColor="#66CCFF" ForeColor="White" Text="Xem thử" PostBackUrl="~/cpu.aspx" />
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="right">
+                <asp:ContentPlaceHolder id="head" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="footer">
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">
+                        <img alt="" src="hinhanh/h2.PNG" style="height: 104px; width: 164px" /></td>
+                    <td class="auto-style4">
+                        <img alt="" src="hinhanh/h3.PNG" style="height: 98px; width: 185px" /></td>
+                    <td class="auto-style5">
+                        <img alt="" src="hinhanh/h4.PNG" style="height: 100px; width: 132px; margin-left: 0px" /></td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="ttlh">
+            <table style="width:100%;">
+                <tr>
+                    <td class="auto-style6" style="border: thin none #000000; color: #000000; font-size: large; font-weight: bold; background-color: #FFFFFF; text-align: center;">Thông tin liên hệ:             
+                        <br />
+                        Số điện thoại: 0909090909</tr>
+                </table>
+        </div>
+    </form>
+</body>
+</html>

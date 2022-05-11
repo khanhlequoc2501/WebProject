@@ -1,0 +1,70 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial;
+}
+#header ul {
+    list-style-type:none;
+    background-color:#1287de;
+    text-align: center;
+}
+#header li {
+  color:#fff;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+
+}
+#header a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+#header a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
+input [type="text"] {
+    box-sizing:border-box;
+    width:50px;
+}
+.search li {
+    display:none;
+}
+.search {
+    display:none;
+    position:absolute;
+}
+#header li {
+    position:relative;
+}
+#header li:hover .search {
+    display:block;
+}
+.linhkien li {
+    display:none;
+}
+.linhkien {
+    display:none;
+    position:absolute;
+}
+#header li:hover .linhkien {
+    display:block;
+    padding:3px;
+}
+.main {
+    float:left;
+    width: 978px;
+}
+#left {
+    width: 30%;
+    float:left;
+}
+#right {
+    width:62%;
+    float:right;
+}
+#ttlh {
+}
